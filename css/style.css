@@ -1,0 +1,56 @@
+.login{
+    width: 360px;
+    height: 630px;
+    padding: 20px;
+    margin: 10%;
+    border-radius: 20px;
+    background: #ffffff;
+    min-width: 100px;
+    min-height: 175px;
+}
+
+.login h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.login form {
+    font-size: 20px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#logo-sidi {
+    width: 300px;
+    padding-right: 10px;
+}
+
+#grad {
+    background-image: linear-gradient(to bottom right, rgb(116, 17, 197), rgb(161, 13, 70));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,54 @@
+{
+  "start_url": "index.html",
+  "display": "standalone",
+  "lang": "pt-br",
+  "description": "It's a template in development ",
+  "dir": "ltr",
+  "orientation": "any",
+  "scope": "/",
+  "background_color": "#31506F",
+  "theme_color": "#4D5360",
+  "name": "PWA Teste",
+  "short_name": "PWA Teste",
+  "categories": [],
+  "screenshots": [],
+  "shortcuts": [],
+  "icons": [
+    {
+      "src": "/images/sidi-logo128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+	    "purpose": "any"
+    },
+    {
+      "src": "/images/sidi-logo144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/sidi-logo192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/sidi-logo256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/sidi-logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/sidi-logo.png",
+      "sizes": "700x400",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
