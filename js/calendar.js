@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/mainpage.css">
-    <link rel="stylesheet" href="/css/calendar.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Agende sua WorkStation</title>
-</head>
-<body>
-    <nav>
-        <div>
-            <a href="/mainPage.html"><button class="btn btn-light">Voltar</button></a>
-            <img class="logo-img" src="/images/sidiLogoFull.png">
-        </div>
-    </nav>
-    <div class="calendar"></div>
-    <script>
-        //check the console for date click event
+//check the console for date click event
 //Fixed day highlight
 //Added previous month and next month view
 
@@ -243,6 +223,3 @@ function CalendarControl() {
   }
   
   const calendarControl = new CalendarControl();
-    </script>
-</body>
-</html>
