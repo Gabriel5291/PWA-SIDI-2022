@@ -21,7 +21,26 @@ self.addEventListener('install', event => {
         '/images/place.png',
         '/images/logo-footer.png',
         '/images/calendar.png',
-        '/images/book.png'
+        '/images/book.png',
+        'images/icons',
+        'images/icons/16.png',
+        'images/icons/20.png',
+        'images/icons/32.png',
+        'images/icons/40.png',
+        'images/icons/48.png',
+        'images/icons/50.png',
+        'images/icons/72.png',
+        'images/icons/80.png',
+        'images/icons/120.png',
+        'images/icons/144.png',
+        'images/icons/172.png',
+        'images/icons/180.png',
+        'images/icons/196.png',
+        'images/icons/256.png',
+        'images/icons/1024.png',
+        'css/dycalendar.css',
+        'css/mainpage.css',
+        'css/style.css'
       ]))
   );
 });
