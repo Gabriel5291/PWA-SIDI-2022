@@ -10,15 +10,16 @@
 }
 
 .login h1 {
-    font-size: 36px;
-    margin-bottom: 25px;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
-.login form {
-    font-size: 20px;
+.login form .logintext{
+    font-size: 15px !important;
 }
 
 .login form .form-group {
+    font-size: 25px;
     margin-bottom: 12px;
 }
 
