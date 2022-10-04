@@ -1,4 +1,4 @@
-var cacheName = 'pwaTeste+-v1.2';
+var cacheName = 'SIDI-Reservations-v1';
 
 self.addEventListener('install', event => {
 
