@@ -18,44 +18,62 @@
         <img class="logo-img" src="/images/sidiLogoFull.png">
     </nav>
 
+
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-1"></div>
 
-            <div class="cardMain col-lg-3 col-md-4 col-sm-6">
-                <div class="container-sm">
-                    <img src="/images/book.png" class="cardfit" alt="Minhas Reservas">
-                    <div class="col-3">
-                        <p class="cardDesc cardinfo">Acesse aqui para visualizar seu histórico de reservas</p>
-                        <h2 class="cardButtonText cardfit"> <a href="/minhasReservas.html"><button class="btn btn-light">Minhas Reservas</button></a></h2>
-                    </div>
+            <div class="col"></div>
+
+            <div class="col-sm cards" onclick="location.href='/perfil.html';" style="cursor: pointer;">
+                <div>
+                <div class="text-center">
+                    <img src="/images/user.png" class="card-img" alt="Sidi">
                 </div>
-            </div>
-            <div class="cardMain col-lg-3 col-md-4 col-sm-6">
-                <div class="container-sm">
-                    <img src="/images/calendar.png" class="cardfit" alt="Agendamento">
-                    <div class="col-3">
-                        <p class="cardDesc cardinfo">Acesse aqui para agendar uma WorkStation</p>
-                        <h2 class="cardButtonText cardfit"> <a href="/agendamento.html"><button class="btn btn-light">Agendamento</button></a></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="cardMain col-lg-3 col-md-4 col-sm-6">
-                <div class="container-sm">
-                    <img src="/images/user.png" class="cardfit" alt="Perfil">
-                    <div class="col-3">
-                        <p class="cardDesc cardinfo">Acesse aqui para visualizar seu perfil</p>
-                        <h2 class="cardButtonText cardfit"> <a href="/perfil.html"><button class="btn btn-light">Perfil</button></a></h2>
-                    </div>
+                <h1 class="text-center">Welcome to SIDI Reservations!</h1>
                 </div>
             </div>
 
-            <div class="col-lg-1"></div>
-            
+            <div class="col-sm" onclick="location.href='/minhasReservas.html';" style="cursor: pointer;">
+                <div>    
+                <div class="text-center">
+                    <img src="/images/book.png" class="card-img" alt="Sidi">
+                </div>
+                <h1 class="text-center">Welcome to SIDI Reservations!</h1>
+                </div>
+            </div>
 
+            <div class="col"></div>
 
         </div>
+
+        <div class="row">
+
+            <div class="col"></div>
+
+            <div class="col-sm" onclick="location.href='/agendamento.html';" style="cursor: pointer;">
+                <div>    
+                <div class="text-center">
+                    <img src="/images/calendar.png" class="card-img" alt="Sidi">
+                </div>
+                <h1 class="text-center">Welcome to SIDI Reservations!</h1>
+                </div>
+            </div>
+
+            <div class="col-sm" onclick="location.href='/perfil.html';" style="cursor: pointer;">
+                <div>    
+                <div class="text-center">
+                    <img src="/images/calendar.png" class="card-img" alt="Sidi">
+                </div>
+                <h1 class="text-center">Welcome to SIDI Reservations!</h1>
+                </div>
+            </div>
+
+            <div class="col"></div>
+
+        </div>        
     </div>
+
 </body>
 <footer class="footer">
     <small>Uso exclusido da SiDi &copy; Todos os direitos reservados</small>
