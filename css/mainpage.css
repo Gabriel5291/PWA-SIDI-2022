@@ -11,7 +11,96 @@ nav {
     display: flex;
     align-items: center;
     position:relative;
-    background-color: #0d03276c;
+    background-color: #fff;
+}
+.col-6{
+    position:relative;   
+    display:inline-block;
+    justify-content: center relative;
+    max-width: 50% !important;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center relative;
+
+}
+
+.cardMain {
+    max-width: 300px !important ;
+    max-height: 400px !important;
+    display:block !important;
+    flex-wrap: wrap;
+    align-items: center relative !important;
+    justify-content:center relative !important;
+    padding: 100px auto !important;
+    margin: 20px auto !important;
+    margin-bottom: 20px;
+    flex:1 1 100px;
+    object-fit: fill !important;
+}
+
+.card {
+    cursor:auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100px auto;
+    text-align: center relative !important;
+    min-height: 200px;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    transition: 0.3s;
+    background-color: #f0edf121 !important;
+    max-width: 300px !important ;
+    max-height: 400px !important;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:  #301C59;
+    background-color: #95cfb3!important;
+}
+/*.img-card{
+    max-width: 50px;
+    max-height: 50px;
+}*/
+
+.cardText *{
+    margin: 0.5rem;
+}
+
+.cardDesc {
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.cardButtonText {
+    color: #62C193!important;
+}
+
+/* botões dos cards */
+.btnCards {
+    cursor: pointer;
+    background-color: #301C59 !important;
+    color: white;
+    border-style: outset;
+    border: 2px solid  #6D2DBB !important;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-size: 0.80rem !important;
+    text-align: center relative !important;
+    font-weight: 400 !important;
+}
+.btnCards:hover {
+    background-color: #6D2DBB !important ;
+    color: white;
+    border-style: outset;
+    border: 2px solid #8674B0 !important;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+;
 }
 
 .cardinfo {
@@ -33,7 +122,7 @@ nav {
 }
 
 #grad {
-    background-image: linear-gradient(to bottom right, rgb(116, 17, 197), rgb(161, 13, 70));
+    background-image: linear-gradient(to bottom right, #c223db, #8674B0, #a301c5);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -55,8 +144,8 @@ nav {
 }
 
 #grad {
-    background-image: linear-gradient(to bottom right, rgb(116, 17, 197), rgb(161, 13, 70));
-    background-position: center;
+    background-image: linear-gradient(to bottom right, #8674B0, #A301C5);
+    background-position: center relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -66,9 +155,8 @@ nav {
 .cardMain {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center relative;
     justify-content: space-around;
-
 }
 
 .card {
@@ -91,7 +179,9 @@ nav {
 }
 
 .cardText *{
-    margin: 0.5rem;
+    margin: 0.3rem auto;
+    align-items: center relative !important;
+    justify-content:center relative !important;
 }
 
 .cardDesc {
@@ -112,6 +202,9 @@ nav {
     margin:0 auto;
     align-items: center;
 }
+.logo-footer{
+    margin:0 auto;
+}
 
 .footer {
     max-width:100%;
@@ -119,29 +212,36 @@ nav {
     position:relative;
     width:60%;
     margin:0 auto;
+    margin-bottom: 10px auto;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
+    color: #ffffff;
 }
 
-/* botões dos cards */
+/* botões dos cards #a27ada  */
 .btnCards {
+    max-width: 300px !important ;
+    max-height: 300px !important;
     cursor: pointer;
-    background-color: #0a021a ;
-    color: white;
+    background-color: #36d689 !important;
+    color:#0a021a !important;
+    font-size: 70%;
     border-style: outset;
-    border: 2px solid  #f0edf121;
-    border-radius: 10px;
+    border: 2px solid  #8674B0 !important;
+    border-radius: 07px;
     padding: 7px 10px 7px 10px;
-    text-decoration: none
-}
+    text-decoration: none;
+    font-size: 0.5em !important;
+
+}   
 .btnCards:hover {
-    background-color: #6D2DBB ;
-    color: white;
+    background-color: #6D2DBB !important;
+    color: white !important;
     border-style: outset;
-    border: 2px solid #8674B0;
+    border: 2px solid #8674B0 !important;
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
-    text-decoration: none
+    text-decoration: none;
 }
 
 footer {
@@ -150,4 +250,11 @@ footer {
 
 #btn-submit {
     margin: 0 !important;
+    color: #62C193 !important;
+    background-color: #20e385 !important;
+}
+
+.btn-light {
+    color:#0a021a !important;
+    background-color: #20e385 !important;
 }
