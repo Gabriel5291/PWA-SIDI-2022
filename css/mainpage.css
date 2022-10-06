@@ -11,7 +11,8 @@ nav {
     display: flex;
     align-items: center;
     position:relative;
-    background-color: #0d03276c;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
 }
 
 footer {
