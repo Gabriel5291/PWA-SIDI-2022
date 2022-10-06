@@ -212,7 +212,8 @@ nav {
     position:relative;
     width:60%;
     margin:0 auto;
-    margin-bottom: 10px auto;
+    margin-bottom: 20px auto;
+    margin-top: 25%  !important;
     text-align: center;
     font-weight: 500;
     color: #ffffff;
