@@ -21,7 +21,7 @@ body {
     width: 60%;
     padding: 0 auto;
     margin: 0 auto;
-    align-items: center;   
+    align-items: center;
 }
 
 body {
@@ -31,8 +31,9 @@ body {
 }
 
 .img-account-profile {
-    height: 10rem; 
-    border: 3.5px solid #c086e8; padding: 4.5px;
+    height: 10rem;
+    border: 3.5px solid #c086e8;
+    padding: 4.5px;
 }
 
 .rounded-circle {
@@ -93,4 +94,12 @@ body {
     padding-right: 0;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
 }
