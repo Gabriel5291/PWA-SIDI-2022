@@ -70,7 +70,7 @@
 
             </form>
             <form action="/mainpage.html" method="get">
-              <input class="btn btn-success w-100" type="submit" value="LOGIN" name="submit" id="btn-submit">
+              <input class="btn btn-success w-100" type="submit" onclick="logar(); return false" value="LOGIN" name="submit" id="btn-submit">
             </form>
 
             </div>
@@ -115,6 +115,18 @@
           alert("Usuário ou senha inválidos");
         }
       }
+  </script>
+  <script>
+    function logar(){
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      if(email == "user@sidi.org.br" %% password == "sidi") {
+        alert('Você está logado');
+        location.href = '/mainpage.html'
+      } else {
+        alert("Usuário ou senha inválidos");
+      }
+    }
   </script>
 </body>
 

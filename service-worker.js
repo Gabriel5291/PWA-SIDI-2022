@@ -1,36 +1,76 @@
-// This is the "Offline page" service worker
+var cacheName = 'SIDI-Reservations-v1';
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+self.addEventListener('install', event => {
 
-const CACHE = "pwabuilder-page";
+  self.skipWaiting();
 
-// TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = "ToDo-replace-this-name.html";
+  event.waitUntil(
+    caches.open(cacheName)
+      .then(cache => cache.addAll([
+        '/service-worker.js',
+        '/manifest.json',
+        '/index.html',
+        '/mainpage.html',
+        '/agendamento.html',
+        '/minhasReservas.html',
+        '/perfil.html',
+        '/images/sidiLogoFull.png',
+        '/service-worker.js',
+        '/images/user.png',
+        '/images/sidiLogo.png',
+        '/images/place.png',
+        '/images/logo-footer.png',
+        '/images/calendar.png',
+        '/images/book.png',
+        'images/icons',
+        'images/icons/16.png',
+        'images/icons/20.png',
+        'images/icons/32.png',
+        'images/icons/40.png',
+        'images/icons/48.png',
+        'images/icons/50.png',
+        'images/icons/72.png',
+        'images/icons/80.png',
+        'images/icons/120.png',
+        'images/icons/144.png',
+        'images/icons/172.png',
+        'images/icons/180.png',
+        'images/icons/196.png',
+        'images/icons/256.png',
+        'images/icons/1024.png',
+        '/checkin.html',
+        'css/mainpage.css',
+        'css/style.css',
+        '/html5-qrcode.min.js'
+      ]))
+  );
+});
 
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
+self.addEventListener('message', function (event) {
+  if (event.data.action === 'skipWaiting') {
     self.skipWaiting();
   }
 });
 
-self.addEventListener('install', async (event) => {
-  event.waitUntil(
-    caches.open(CACHE)
-      .then((cache) => cache.add(offlineFallbackPage))
-  );
-});
+self.addEventListener('fetch', function (event) {
+  //Atualizacao internet
+  event.respondWith(async function () {
+     try {
+       return await fetch(event.request);
+     } catch (err) {
+       return caches.match(event.request);
+     }
+   }());
 
-if (workbox.navigationPreload.isSupported()) {
-  workbox.navigationPreload.enable();
-}
-
-self.addEventListener('fetch', (event) => {
-  if (event.request.mode === 'navigate') {
-    event.respondWith((async () => {
-      try {
-        const preloadResp = await event.preloadResponse;
-
-        if (preloadResp) {
-          return preloadResp;
+  //Atualizacao cache
+  event.respondWith(
+    caches.match(event.request)
+      .then(function (response) {
+        if (response) {
+          return response;
         }
+        return fetch(event.request);
+      })
+  );
 
+});
