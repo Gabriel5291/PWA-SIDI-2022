@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 
+* {
+    font-family: "Nunito", sans-serif;
+}
+
 body {
     height: 100vh;
     align-items: center;
@@ -11,19 +15,76 @@ nav {
     display: flex;
     align-items: center;
     position:relative;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
+}
+.col-6{
+    position:relative;   
+    display:inline-block;
+    margin-top: 5% !important;
+    justify-content: center relative;
+    max-width: 50% !important;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center relative;
+
+}
+
+.cardMain {
+    max-width: 300px !important ;
+    max-height: 400px !important;
+    display:block !important;
+    flex-wrap: wrap;
+    align-items: center relative !important;
+    justify-content:center relative !important;
+    padding: 100px auto !important;
+    margin: 10px auto !important;
     margin-bottom: 20px;
+    margin-top: 30% !important;
+    flex:1 1 100px;
+    object-fit: fill !important;
 }
 
-footer {
-    padding: 20px;
+.card {
+    cursor:auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100px auto;
+    text-align: center relative !important;
+    min-height: 200px;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    transition: 0.3s;
+    background-color: #f0edf121 !important;
+    max-width: 300px !important ;
+    max-height: 400px !important;
 }
 
-.cards {
-    max-width: 300px;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:  #301C59;
+    background-color: #95cfb3!important;
+}
+/*.img-card{
+    max-width: 50px;
+    max-height: 50px;
+}*/
+
+.cardText *{
+    margin: 0.5rem;
 }
 
-.card-info {
+.cardDesc {
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.cardButtonText {
+    color: #62C193!important;
+}
+
+.cardinfo {
     width: 200px;
     height: auto;
     margin: auto;
@@ -32,7 +93,7 @@ footer {
     margin: 0;
 }
 
-.card-fit {
+.cardfit {
     width: 200px;
     height: 200px;
     margin: auto;
@@ -41,13 +102,8 @@ footer {
     margin: 0;
 }
 
-.cardimg {
-    height: 100px;
-    width: 100px;
-}
-
 #grad {
-    background-image: linear-gradient(to bottom right, rgb(116, 17, 197), rgb(161, 13, 70));
+    background-image: linear-gradient(to bottom right, #c223db, #8674B0, #a301c5);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -56,27 +112,95 @@ footer {
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: auto;
+    margin-top:10% !important ;
     object-fit: fill;
     display: block;
 }
 
+#user{
+    color: #fff;
+}
+
+.form-label{
+    color: #fff;
+}
+.form-control{
+    margin-top: 0.1em !important;
+}
+
+.btn {
+    margin-left: 30px;
+}
+
 #grad {
-    background-image: linear-gradient(to bottom right, rgb(116, 17, 197), rgb(161, 13, 70));
-    background-position: center;
+    background-image: linear-gradient(to bottom right, #8674B0, #A301C5);
+    background-position: center relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+}
+.container-reservas{
+    display: flex;
+}
+.book{
+    display: inline-flex;
+    align-items: relative;
+    min-width: 30% !important;
+    max-width: 40% !important;
+    margin: 0.5em !important;
+}
+.reservas{
+    display:inline-flex !important;
+    align-items: relative;
+    color: #fff;
+    font-size:medium;
+    align-items: center relative;
+    max-width: 50em !important;
+    max-height: 30em !important;
+    margin-left: 0.5em !important;
+    padding-bottom: 0% !important;
+}
+
+.cardMain {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center relative;
+    justify-content: space-around;
+}
+
+.card {
+    cursor:auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    max-width: 500px;
+    text-align: center;
+    min-height: 100px;
+    border-radius: 20px;
+    margin: 20px;
+    transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-10px);
     box-shadow: #301C59;
     background-color: #95cfb3;
+}
+
+.cardText *{
+    margin: 0.3rem auto;
+    align-items: center relative !important;
+    justify-content:center relative !important;
+}
+
+.cardDesc {
+    font-weight: 700;
+    opacity: 0.7;
 }
 
 .cardButtonText {
@@ -90,19 +214,62 @@ footer {
     width:60%;
     padding:0 auto;
     margin:0 auto;
+    margin-left: 30px;
     align-items: center;
 }
+.logo-footer{
+    margin:0 auto;
+}
 
-.footer {
+footer {
     max-width:100%;
     max-height:100%;
-    position:relative;
+    position: center relative;
     width:60%;
     margin:0 auto;
+    margin-top: 5% !important;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
+    color: #ffffff;
 }
+
+/* botões dos cards #a27ada  */
+.btnCards {
+    max-width: 300px !important ;
+    max-height: 300px !important;
+    cursor: pointer;
+    background-color: #b778da !important;
+    color:#fff !important;
+    font-size: 70% !important;
+    border-style: outset;
+    border: 2px solid  #b778da !important;
+    border-radius: 07px;
+    padding: 7px 10px 7px 10px;
+    text-decoration: none;
+    font-size: 0.5em !important;
+    font-weight: 500 !important ;
+
+}   
+/*#0a021*/
+.btnCards:hover {
+    background-color: #6D2DBB !important;
+    color: white !important;
+    border-style: outset;
+    border: 2px solid #8674B0 !important;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
 
 #btn-submit {
     margin: 0 !important;
+    color: #0a021a !important;
+    background-color: #20e385 !important;
 }
+
+.btn-light {
+    color:#0a021a !important;
+    background-color: #20e385 !important;
+    margin-left: 15px;
+  }

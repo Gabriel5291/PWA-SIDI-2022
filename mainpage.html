@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,79 +8,73 @@
     <link rel="stylesheet" href="/css/mainpage.css">
     <meta name="description" content="A app developed to make workstations reservations.">
     <link rel="icon" type="image/png" href="/images/sidiLogo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <meta name="apple-mobile-web-app-status-bar" content="#301C59">
     <meta name="theme-color" content="#301C59">
-    <title>Sidi</title>
+    <title>Sidi Agendamento</title>
 </head>
-
 <body id="grad">
     <nav>
         <img class="logo-img" src="/images/sidiLogoFull.png">
     </nav>
 
-
+    
 
     <div class="container-fluid">
-        <div class="row">
 
-            <div class="col"></div>
-
-            <div class="col-sm shadow" onclick="location.href='/perfil.html';" style="cursor: pointer;">
-                <div>
-                    <div class="text-center">
-                        <img src="/images/user.png" class="card-img" alt="Sidi">
+        <div class="row align-items-center" style="margin: 0; padding: 0;">
+            
+            <div class="col-6 col-lg-3" onclick="location.href='/minhasReservas.html';" style="cursor: pointer;" style="padding-left: 1rem; padding-right: 1rem">
+                <div class="cardMain">
+                    <div class="card shadow">
+                        <img src="/images/book.png" alt="Minhas Reservas">
+                        <div class="cardText">
+                            <h2 class="cardButtonText"> <a href="/minhasReservas.html"><button class="btnCards shadow">Minhas Reservas</button></a></h2>
+                        </div>
                     </div>
-                    <h1 class="text-center">Perfil</h1>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" onclick="location.href='/agendamento.html';" style="cursor: pointer;" style="padding-left: 1rem; padding-right: 1rem">
+                <div class="cardMain">
+                    <div class="card shadow">
+                        <img src="/images/calendar.png" alt="Agendamento">
+                        <div class="cardText">
+                            <h2 class="cardButtonText"> <a href="/agendamento.html"><button class="btnCards shadow">Agendamento</button></a></h2>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-6 col-lg-3" onclick="location.href='/checkin.html';" style="cursor: pointer;" style="padding-left: 1rem; padding-right: 1rem">
+                
+                <div class="cardMain">
+                    <div class="card shadow">
+                        <img src="/images/place.png" alt="check-in">
+                        <div class="cardText">
+                            <h2 class="cardButtonText"> <a href="/checkin.html"><button class="btnCards shadow">Check-in</button></a></h2>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-sm shadow" onclick="location.href='/minhasReservas.html';" style="cursor: pointer;">
-                <div>
-                    <div class="text-center">
-                        <img src="/images/book.png" class="card-img" alt="Sidi">
+            <div class="col-6 col-lg-3" onclick="location.href='/perfil.html';" style="cursor: pointer;" style="padding-left: 1rem; padding-right: 1rem">
+                <div class="cardMain">
+                    <div class="card shadow">
+                        <img src="/images/user.png" alt="Perfil">
+                        <div class="cardText">
+                            <h2 class="cardButtonText"> <a href="/perfil.html"><button class="btnCards shadow">Perfil</button></a></h2>
+                        </div>
                     </div>
-                    <h1 class="text-center">Reservas</h1>
                 </div>
-            </div>
 
-            <div class="col"></div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col"></div>
-
-            <div class="col-sm shadow" onclick="location.href='/agendamento.html';" style="cursor: pointer;">
-                <div>
-                    <div class="text-center">
-                        <img src="/images/calendar.png" class="card-img" alt="Sidi">
-                    </div>
-                    <h1 class="text-center">Agendamentos</h1>
-                </div>
-            </div>
-
-            <div class="col-sm shadow" onclick="location.href='/checkin.html';" style="cursor: pointer;">
-                <div>
-                    <div class="text-center">
-                        <img src="/images/place.png" class="card-img" alt="Sidi">
-                    </div>
-                    <h1 class="text-center">Check-In</h1>
-                </div>
-            </div>
-
-            <div class="col"></div>
-
+            </div>    
         </div>
     </div>
-
 </body>
 <footer class="footer">
     <small>Uso exclusido da SiDi &copy; Todos os direitos reservados</small>
     <hr>
     <img id="logo-footer" src="/images/logo-footer.png" />
 </footer>
-
 </html>
