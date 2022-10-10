@@ -103,3 +103,15 @@ nav {
     background-color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
+.footer {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+}
+footer {
+    padding: 20px;
+}
