@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 
+* {
+    font-family: "Nunito", sans-serif;
+}
+
 body {
     height: 100vh;
     align-items: center;
@@ -16,7 +20,7 @@ nav {
 .col-6{
     position:relative;   
     display:inline-block;
-    margin-top: 5% !important;
+    margin-top: 10% !important;
     justify-content: center relative;
     max-width: 50% !important;
 }
@@ -133,12 +137,24 @@ nav {
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: auto;
+    margin-top:10% !important ;
     object-fit: fill;
     display: block;
+}
+
+#user{
+    color: #fff;
+}
+
+.form-label{
+    color: #fff;
+}
+.form-control{
+    margin-top: 0.1em !important;
 }
 
 .btn {
@@ -152,6 +168,27 @@ nav {
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+}
+.container-reservas{
+    display: flex;
+}
+.book{
+    display: inline-flex;
+    align-items: relative;
+    min-width: 30% !important;
+    max-width: 40% !important;
+    margin: 0.5em !important;
+}
+.reservas{
+    display:inline-flex !important;
+    align-items: relative;
+    color: #fff;
+    font-size:medium;
+    align-items: center relative;
+    max-width: 50em !important;
+    max-height: 30em !important;
+    margin-left: 0.5em !important;
+    padding-bottom: 0% !important;
 }
 
 .cardMain {
@@ -202,6 +239,7 @@ nav {
     width:60%;
     padding:0 auto;
     margin:0 auto;
+    margin-left: 30px;
     align-items: center;
 }
 .logo-footer{
@@ -211,11 +249,11 @@ nav {
 .footer {
     max-width:100%;
     max-height:100%;
-    position:relative;
+    position: center relative;
     width:60%;
     margin:0 auto;
-    margin-bottom: 20px auto;
-    margin-top: 20%  !important;
+    margin-bottom: 20px !important;
+    margin-top: 10% !important;
     text-align: center;
     font-weight: 500;
     color: #ffffff;
@@ -226,17 +264,19 @@ nav {
     max-width: 300px !important ;
     max-height: 300px !important;
     cursor: pointer;
-    background-color: #36d689 !important;
-    color:#0a021a !important;
-    font-size: 70%;
+    background-color: #b778da !important;
+    color:#fff !important;
+    font-size: 70% !important;
     border-style: outset;
-    border: 2px solid  #8674B0 !important;
+    border: 2px solid  #b778da !important;
     border-radius: 07px;
     padding: 7px 10px 7px 10px;
     text-decoration: none;
     font-size: 0.5em !important;
+    font-weight: 500 !important ;
 
 }   
+/*#0a021*/
 .btnCards:hover {
     background-color: #6D2DBB !important;
     color: white !important;
@@ -253,11 +293,12 @@ footer {
 
 #btn-submit {
     margin: 0 !important;
-    color: #62C193 !important;
+    color: #0a021a !important;
     background-color: #20e385 !important;
 }
 
 .btn-light {
     color:#0a021a !important;
     background-color: #20e385 !important;
-}
+    margin-left: 15px;
+  }

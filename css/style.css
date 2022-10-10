@@ -3,12 +3,16 @@
     height: 630px;
     padding: 20px;
     margin: 10%;
+    margin-top: 10% !important;
     border-radius: 20px;
     background: #ffffff;
     position: relative;
     margin-left: 0!important;
     margin-right: 0!important;
     width: 100%!important;
+}
+.col-sm-8{
+    margin-top: 15% !important;
 }
 
 .login h1 {
