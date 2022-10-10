@@ -24,7 +24,8 @@
   <link rel="apple-touch-icon" href="images/icons/icon-196x196.png">
   <link rel="apple-touch-icon" href="images/icons/icon-256x256.png">
   <link rel="apple-touch-icon" href="images/icons/icon-1024x1024.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <title>Sidi</title>
 </head>
 
@@ -33,49 +34,49 @@
   <div class="container">
     <div class="row">
 
-        <div class="col"></div>
+      <div class="col"></div>
 
-        <div class="col login-card align-self-center">
-            <div class="login">
+      <div class="col login-card align-self-center">
+        <div class="login">
 
-            <div class="text-center">
-                <img src="/images/sidiLogoFull.png" id="logo-sidi" alt="Sidi">
+          <div class="text-center">
+            <img src="/images/sidiLogoFull.png" id="logo-sidi" alt="Sidi">
+          </div>
+
+          <h1 class="text-center">Welcome to SIDI Reservations!</h1>
+
+          <form class="needs-validation">
+            <div class="form-group was-validated">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-control" type="email" id="email" required>
+              <div class="invalid-feedback logintext">
+                Please enter you email address
+              </div>
             </div>
 
-            <h1 class="text-center">Welcome to SIDI Reservations!</h1>
-
-            <form class="needs-validation">
-                <div class="form-group was-validated">
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-control" type="email" id="email" required>
-                    <div class="invalid-feedback logintext">
-                        Please enter you email address
-                    </div>
-                </div>
-
-                <div class="form-group was-validated">
-                    <label class="form-label" for="password">Password</label>
-                    <input class="form-control" type="password" id="password" required>
-                    <div class="invalid-feedback logintext">
-                        Please enter you password
-                    </div>
-                </div>
-
-                <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox" id="check">
-                    <label class="form-check-label" for="check">Remember me</label>
-                </div>
-
-            </form>
-            <form action="/mainpage.html" method="get">
-              <input class="btn btn-success w-100" type="submit" value="LOGIN" name="submit" id="btn-submit">
-            </form>
-
+            <div class="form-group was-validated">
+              <label class="form-label" for="password">Password</label>
+              <input class="form-control" type="password" id="password" required>
+              <div class="invalid-feedback logintext">
+                Please enter you password
+              </div>
             </div>
+
+            <div class="form-group form-check">
+              <input class="form-check-input" type="checkbox" id="check">
+              <label class="form-check-label" for="check">Remember me</label>
+            </div>
+
+          </form>
+          <form action="/mainpage.html" method="get">
+            <input class="btn btn-success w-100" type="submit" value="LOGIN" name="submit" id="btn-submit">
+          </form>
+
         </div>
+      </div>
 
-        <div class="col"></div>
-        
+      <div class="col"></div>
+
     </div>
   </div>
 
@@ -94,7 +95,7 @@
           newWorker = reg.installing;
           newWorker.addEventListener('statechange', () => {
             // Has network.state changed?
-            
+
           });
         });
       });
@@ -104,6 +105,19 @@
         window.location.reload();
         refreshing = true;
       });
+    }
+  </script>
+  
+  <script>
+    function logar() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      if (email == "user@sidi.org.br" && password == "sidi") {
+        alert('Você está logado!!');
+        location.href = "mainpage.html";
+      } else {
+        alert("Usuário ou senha inválidos");
+      }
     }
   </script>
 
