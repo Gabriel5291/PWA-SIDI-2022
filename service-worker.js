@@ -38,9 +38,10 @@ self.addEventListener('install', event => {
         'images/icons/196.png',
         'images/icons/256.png',
         'images/icons/1024.png',
-        'css/dycalendar.css',
+        '/checkin.html',
         'css/mainpage.css',
-        'css/style.css'
+        'css/style.css',
+        '/html5-qrcode.min.js'
       ]))
   );
 });
