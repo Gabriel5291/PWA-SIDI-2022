@@ -13,7 +13,7 @@ body {
 
 nav {
     display: flex;
-    align-items: center;
+    align-items: center !important;
     position:relative;
     background-color: #fff;
 }
@@ -22,7 +22,6 @@ nav {
     display:inline-block;
     margin-top: 10% !important;
     justify-content: center relative;
-    margin-top: 5% !important;
     max-width: 50% !important;
 }
 .row{
@@ -42,14 +41,14 @@ nav {
     padding: 100px auto !important;
     margin: 20px auto !important;
     margin-bottom: 20px;
-    margin-top: 30% !important;
     margin-top: 25% !important;
     flex:1 1 100px;
     object-fit: fill !important;
+  
 }
 
 .card {
-    cursor:auto;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     max-width: 100px auto;
@@ -58,21 +57,16 @@ nav {
     border-radius: 1rem;
     margin: 1.5rem;
     transition: 0.3s;
-    background-color: #f0edf121 !important;
+    background-color:#682f85 !important;
     max-width: 300px !important ;
     max-height: 400px !important;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow:  #301C59;
-    background-color: #95cfb3!important;
+    box-shadow:  #301C59 !important;
+    background-color: #95cfb3 !important;
 }
-/*.img-card{
-    max-width: 50px;
-    max-height: 50px;
-}*/
-
 .cardText *{
     margin: 0.5rem;
 }
@@ -111,24 +105,6 @@ nav {
 ;
 }
 
-.cardinfo {
-    width: 200px;
-    height: auto;
-    margin: auto;
-    object-fit: fill;
-    display: block;
-    margin: 0;
-}
-
-.cardfit {
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    object-fit: fill;
-    display: block;
-    margin: 0;
-}
-
 #grad {
     background-image: linear-gradient(to bottom right, #c223db, #8674B0, #a301c5);
     background-position: center;
@@ -137,16 +113,17 @@ nav {
     background-size: cover;
     position: relative;
 }
-
-.profile-img {
+#perfil-img{
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50% !important;
     margin: auto;
     margin-top:10% !important ;
     object-fit: fill;
     display: block;
+
 }
+
 
 #user{
     color: #fff;
@@ -163,36 +140,9 @@ nav {
     margin-left: 30px;
 }
 
-#grad {
-    background-image: linear-gradient(to bottom right, #8674B0, #A301C5);
-    background-position: center relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-}
 .container-reservas{
     display: flex;
 }
-.book{
-    display: inline-flex;
-    align-items: relative;
-    min-width: 30% !important;
-    max-width: 40% !important;
-    margin: 0.5em !important;
-}
-.reservas{
-    display:inline-flex !important;
-    align-items: relative;
-    color: #fff;
-    font-size:medium;
-    align-items: center relative;
-    max-width: 50em !important;
-    max-height: 30em !important;
-    margin-left: 0.5em !important;
-    padding-bottom: 0% !important;
-}
-
 .cardMain {
     display: flex;
     flex-wrap: wrap;
@@ -241,8 +191,8 @@ nav {
     width:60%;
     padding:0 auto;
     margin:0 auto;
-    margin-left: 30px;
-    align-items: center;
+    margin-left: 30px !important;
+    align-items: center relative !important;
 }
 .logo-footer{
     margin:0 auto;
@@ -254,7 +204,7 @@ nav {
     position: center relative;
     width:60%;
     margin:0 auto;
-    margin-bottom: 20px !important;
+    margin-bottom: 5% !important;
     margin-top: 10% !important;
     text-align: center;
     font-weight: 500;
@@ -268,14 +218,15 @@ nav {
     cursor: pointer;
     background-color: #b778da !important;
     color:#fff !important;
-    font-size: 70% !important;
     border-style: outset;
     border: 2px solid  #b778da !important;
     border-radius: 07px;
-    padding: 7px 10px 7px 10px;
+    padding: 3px 7px 3px 7px;
+    margin:3% auto !important;
     text-decoration: none;
-    font-size: 0.5em !important;
+    font-size: 50% !important;
     font-weight: 500 !important ;
+    box-shadow:  #301C59;
 
 }   
 /*#0a021*/

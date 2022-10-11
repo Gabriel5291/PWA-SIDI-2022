@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
 .result {
-    background-color: green;
+    background-color: #62267e;
     color:#fff;
     padding:20px;
     font-family: "Nunito", sans-serif;
@@ -14,8 +15,10 @@ nav {
   justify-content: center relative;
 }
 .row {
-    display:flex;
-    justify-content: center relative;
+  margin-top: 20% !important;
+  margin-left: 1% !important;
+  display:flex;
+  justify-content: center relative;
 }
  #grad {
     background-image: linear-gradient(to bottom right, #8674B0, #A301C5);
@@ -37,7 +40,7 @@ nav {
   width:60%;
   margin:0% auto !important;
   margin-bottom: 0% !important;
-  margin-top: 60% !important;
+  margin-top: 40% !important;
   text-align: center;
   font-weight: 500;
   color: #ffffff;
@@ -61,4 +64,5 @@ nav {
 .col {
     font-family: "Nunito", sans-serif;
     text-align: center;
+    background-color: #20e385;
 }

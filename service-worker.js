@@ -8,6 +8,8 @@ self.addEventListener('install', event => {
     caches.open(cacheName)
       .then(cache => cache.addAll([
         '/service-worker.js',
+        '/pwabuilder-sw.js',
+        '/pwabuilder-serviceworker.js',
         '/manifest.json',
         '/index.html',
         '/mainpage.html',
