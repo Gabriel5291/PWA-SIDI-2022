@@ -65,7 +65,7 @@ nav {
 .card:hover {
     transform: translateY(-10px);
     box-shadow:  #301C59 !important;
-    background-color: #95cfb3 !important;
+    background-color: #20e385 !important;
 }
 .cardText *{
     margin: 0.5rem;
@@ -77,7 +77,7 @@ nav {
 }
 
 .cardButtonText {
-    color: #62C193!important;
+    color: #fff!important;
 }
 
 /* botões dos cards */
@@ -90,7 +90,7 @@ nav {
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-    font-size: 0.80rem !important;
+    font-size: 0.65rem !important;
     text-align: center relative !important;
     font-weight: 400 !important;
 }
