@@ -1,3 +1,21 @@
+var newWorker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js').then(reg => {
+        reg.addEventListener('updatefound', () => {
+            newWorker = reg.installing
+            newWorker.addEventListener('statechange', () => {           
+            });
+        });
+    });
+    
+    let refreshing
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (refreshing) return
+        window.location.reload()
+        refreshing = true
+    })
+}
+
 function validar(){
     body = {
         "email": email,
@@ -16,25 +34,8 @@ function validar(){
       alert('Você está logado');
       location.href = '/mainpage.html'
     } else {
-      alert("Usuário ou senha inválidos");
+      alert("Usuário ou senha inválidos")
     }
 
     return
-  } // retorna um texto
-
-  let newWorker;
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js').then(reg => {
-        reg.addEventListener('updatefound', () => {
-          newWorker = reg.installing;
-          newWorker.addEventListener('statechange', () => {           
-          });
-        });
-      });
-      let refreshing;
-      navigator.serviceWorker.addEventListener('controllerchange', function () {
-        if (refreshing) return;
-        window.location.reload();
-        refreshing = true;
-      });
-    }
+}
