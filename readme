@@ -1,0 +1,11 @@
+Pwa-Sidi
+
+📚 Resumo do projeto - A proposta é de criar uma aplicação para fazer reservas de workstations a pedido da empresa Sidi.
+
+💻 Desenvolvimento - O nosso Front-end do nosso projeto foi basicamente desenvolvido utilizando HTML,CSS & Java Script.
+
+📋 Pré-requisitos - Esses são alguns pré-requisitos que você precisa ter instalado antes de rodar a aplicação.
+
+• Postgree: Para vizualizar as Necessário para executar o projeto Java
+• Spring-Tools (ou outra ide de sua escolha): Necessário para rodar a API.
+• Eclipse: Para desenvolvimento do projeto

@@ -102,15 +102,6 @@ nav {
     margin: 0;
 }
 
-#grad {
-    background-image: linear-gradient(to bottom right, #c223db, #8674B0, #a301c5);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-}
-
 .profile-img {
     width: 150px;
     height: 150px;
