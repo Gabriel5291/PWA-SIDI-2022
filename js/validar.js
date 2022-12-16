@@ -39,3 +39,14 @@ function validar(){
 
     return
 }
+
+function logar() {
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  if(email == "user@sidi.org.br" && password == "sidi") {
+    alert('Você está logado!!');
+    location.href = "mainpage.html";
+  } else {
+    alert("Usuário ou senha inválidos");
+  }
+}
