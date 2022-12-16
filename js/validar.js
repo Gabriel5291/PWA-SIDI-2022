@@ -17,13 +17,13 @@ if ('serviceWorker' in navigator) {
 }
 
 function validar(){
+    url = "http://localhost:8080/api/login"
+    email = document.getElementById('email').value
+    password = document.getElementById('password').value
     body = {
         "email": email,
         "password": password
       }
-    url = "http://localhost:8080/api/login"
-    email = document.getElementById('email').value;
-    password = document.getElementById('password').value;
 
     request = new XMLHttpRequest()
     request.open("POST", url, true)
