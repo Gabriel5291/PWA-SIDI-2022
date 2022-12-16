@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script src="/js/perfil.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,29 +28,49 @@
                 </div>
                 <br>
                     <div class="form-group was-validated">
-                        <label class="form-label" for="uname">First Name</label>
-                        <h1 class="form-label">José</h1>
+                        <label class="form-label" for="uname">Name</label>
+                        <input class="form-control" type="name" id="nameedit">
+                        <div class="invalid-feedback logintext">
+                            Please enter you name
+                        </div>
                     </div>
-
-                    <br>
 
                     <div class="form-group was-validated">
                         <label class="form-label" for="lastname">Last name</label>
-                        <h1 class="form-label">Aldo</h1>
+                        <input class="form-control" type="name" id="lastnameedit">
+                        <div class="invalid-feedback logintext">
+                            Please enter you last name
+                        </div>
                     </div>
-
-                    <br>
 
                     <div class="form-group was-validated">
                         <label class="form-label" for="email">Email</label>
-                        <h1 class="form-label">jose.aldo@gmail.com</h1>
+                        <input class="form-control" type="email" id="emailedit">
+                        <div class="invalid-feedback logintext">
+                            Please enter you email address
+                        </div>
+                    </div>
+
+                    <div class="form-group was-validated">
+                        <label class="form-label" for="password">Password</label>
+                        <input class="form-control" type="password" id="passwordedit">
+                        <div class="invalid-feedback logintext">
+                            Please enter you password
+                        </div>
+                    </div>
+
+                    <br>
+    
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox" id="check">
+                        <label class="form-check-label" for="check">I agree with the terms of usage</label>
                     </div>
 
                     <br>
     
                 </form>
-                <form action="/perfilEdit.html" method="get">
-                    <input class="btn btn-success w-100" type="submit" value="EDITAR" name="submit" id="btn-submit">
+                <form action="/perfil.html" method="get">
+                    <input class="btn btn-success w-100" type="submit" value="SAVE CHANGES" name="submit" id="btn-submit">
                 </form>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-3"></div>
